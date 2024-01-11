@@ -5,6 +5,10 @@ tasks:
     before: |
       source ./bin/install_aws_cli.sh
 
+  - name: docker-login
+    before: |
+      source ./bin/docker_login.sh
+
 vscode:
   extensions:
     - amazonwebservices.aws-toolkit-vscode
